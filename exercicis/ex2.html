@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Aventura</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="author" content="Luis Alejandro">
+  <meta name="keywords" content="HTML & CSS">
+  <meta name="description" content="Free Web of group Aventura">
+  <link rel="icon" href="PT2 MUSIC BOX/seo.png">
+  <style>
+    body{
+      background-color: rgb(136, 61, 73);
+    }
+    
+    #encabezado{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1% auto;
+    }
+
+    #encabezado img{
+    border-style: outset;
+    border-color: rgb(0, 0, 0);
+    }
+
+    h2{
+      color: rgb(143, 253, 253);
+    }
+  
+    #LA {
+      display: flex;
+      align-items: center;
+    }
+
+    #link {
+      text-align: left;
+      margin-right: 2%;
+      border-color: rgb(163, 154, 154);
+      border-style: outset;
+    }
+
+    #link a{
+      color: rgb(224, 213, 212);
+    }
+
+    .audio-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-color: brown;
+      border-style: inset;
+    }
+
+    .audio-container p {
+      margin-bottom: 2%;
+      color: rgb(224, 213, 212);
+    }
+
+    #fotos{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #fotos div{
+      flex:1;
+      text-align: center;
+      margin: 0% auto;
+      border-style: outset;
+      border-color: brown;
+      color: rgb(143, 253, 253);
+    }
+    img{
+      width: 60%;
+      height: auto;
+      max-height: 50% ;
+    }
+    nav{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      margin: 1% auto;
+      color: rgba(246, 255, 205, 0.836);
+      border-style: groove;
+      border-color: brown;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 1% auto;
+      color: rgb(186, 233, 202);
+      
+    }
+  
+    #fila1{
+      border-style: solid;
+      border-color: rgb(165, 104, 48);
+    }
+    tr{
+      border-style: dashed;
+      border-color: rgb(165, 104, 48);
+    }
+    td{
+      padding: 0.2%;
+    }
+    tr,td{
+      width: 47%;
+    }
+    .video-container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+    }
+
+    .video {
+      margin: 1%;
+    }
+
+footer{
+  background-color:rgba(226, 95, 43, 0.726);
+}
+    #copi{
+     text-align: center;
+    }
+    footer img{
+      width: 2%;
+      height: 2%;
+    }
+    #mapa {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1% auto;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="encabezado">
+    <h1>AVENTURA</h1>
+    <img src="PT2 MUSIC BOX/Aventura-800x400.jpg" alt="Foto Grupo">
+    <h2>Aventura never dies</h2>
+  </div>
+
+    <div id="LA">
+      <div id="link">
+      <a href="https://www.aventuramusica.com">Pagina Oficial</a>
+      </div>
+      <div class="audio-container">
+        <p>Dile al amor - Aventura</p>
+        <audio controls>
+          <source src="PT2 MUSIC BOX/aventura_aventura-dile-al-amor.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <div id="fotos">
+      <div>
+        <figure>
+          <img src="PT2 MUSIC BOX/aventura_1900x1096.webp" alt="Foto Grupo Aventura">
+          <figcaption>El grupo que revolucionó la industria de la bachata</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure>
+          <img src="PT2 MUSIC BOX/Aventura-1200x1200.avif" alt="Foto Grupo Aventura">
+          <figcaption>Se dispersó el grupo pero nunca su música</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure>
+          <img src="PT2 MUSIC BOX/AVENTURA_209x404.webp" alt="Foto Romeo Santos">
+          <figcaption>Romeo Santos, la cara principal reconocida internacionalmente</figcaption>
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <nav>
+      <ol>Componentes
+        <li>Romeo santos</li>
+        <li>Lenny Santos</li>
+        <li>Max Agende Santos</li>
+        <li> Henry Santos</li>
+      </ol>
+      <ul> Rol
+        <li>voz principal, compositor, coproductor</li>
+        <li>guitarra, guitarra eléctrica, arreglista, productor, director de banda</li>
+        <li>bajista y rapero</li>
+        <li>corista, compositor, productor</li>
+      </ul>
+    </nav>
+
+    <table>
+      <tbody>
+        <tr id="fila1">
+          <td>Año</td>
+          <td>Album</td>
+          <td>Canciones</td>
+        </tr>
+        <tr>
+          <td>1999</td>
+          <td>Generation Next</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>2002</td>
+          <td>We Broke the Rules</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>2003</td>
+          <td>Love & Hate</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>2005</td>
+          <td>God's Project</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>2009</td>
+          <td>The Last</td>
+          <td>18</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="video-container">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/RxIM2bMBhCo" title="Todavia me amas" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/sV31V7hpxiw" title="El perdedor" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/yyyj3PW8pLA" title="Infieles" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/Li_j035xLf4" title="Obsesion" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/PBpApZuRX7w" title="Hermanita" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/YoTDXbq22v8" title="La boda" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <iframe id="mapa" src="https://maps.google.com/?ll=40.84676,-73.873207&z=14&t=m&output=embed" title="maps" width="50%" height="50%" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <div id="copi">
+
+      <a href="https://web.whatsapp.com">
+        <img src="PT1 MY STORE\whatsapp.png" alt="whatsapp.com">
+      </a>
+
+      <a href="https://www.instagram.com">
+        <img src="PT1 MY STORE\Instagram.png" alt="instagram.com">
+      </a>
+
+      <a href="https://twitter.com/?lang=es">
+        <img src="PT1 MY STORE\twitter.png" alt="twitter.com">
+      </a>
+
+      <a>©Aventutra</a>
+
+    </div>
+  </footer>
+</body>
+
+</html>
