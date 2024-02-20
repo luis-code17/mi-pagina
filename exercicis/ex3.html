@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Viladoms de Dalt</title>
+    <meta name="author" content="Luis Alejandro">
+    <meta name="keywords" content="HTML & CSS">
+    <meta name="description" content="Web of Viladoms de Dalt,">
+    <link rel="icon" href="PT2 MUSIC BOX/seo.png">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link href="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/threejs/r70/three.min.js"> </script>
+    <script src="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.js"> </script>
+
+    <style>
+        body {
+            background-color: aliceblue;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif
+        }
+
+        #photosphere { height:600px; width:100%; margin: 0 auto }
+
+        h1, h2 {
+            font-family: 'Georgia', serif;
+        }
+
+        @media (width < 576px) {
+            
+            body {
+
+            }
+        }
+
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+           
+            body {
+
+            }
+        }
+
+        @media (width > 993px) {
+          
+            body {
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Viladoms de dalt </h1>
+        <div id="photosphere"> </div>
+        <h2>Un edifici amb orígens medievals, que remunten al s. XIV.</h2>
+    </header>
+    <section>
+
+    </section>
+    <footer>
+
+    </footer>
+
+    <script>
+
+        // 360 viewer
+        var PSV = new PhotoSphereViewer({
+          panorama: "PT2 MUSIC BOX/seo.png",
+          container: 'photosphere',
+          loading_img: 'PT2 MUSIC BOX/seo.png',
+          navbar: 'autorotate zoom download fullscreen',
+          caption: 'texto',
+          default_fov: 65,
+          mousewheel: false,
+          size: {
+            height: 400
+          }
+        });
+      
+      </script>
+</body>
+
+</html>
