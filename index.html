@@ -1,21 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="author" content="Luis Alejandro">
+  <meta name="keywords" content="HTML & CSS">
+  <meta name="description" content="Luis Alejandro Web">
+  <link rel="icon" href="imatges/iconweb.png">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="Style.css">
   <title>Luis</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js'></script>
 </head>
+
 <body>
-  <h1>Luis Alejandro</h1>
-  <a href="./exercicis/ex1.html">EXERCICI 1</a>
+  <header>
+    <nav class="menu">
+      <a href="">Home</a>
+      <a href="#projectes">Projects</a>
+      <a href="#treballs">Works Html</a>
+      <a href="#yo">About Me</a>
+      <a href="#contacto">Contact</a>
+    </nav>
 
-  <h1>Luis Alejandro</h1>
-  <a href="./exercicis/ex2.html">EXERCICI 2</a>
+    <div class="imatge-fons">
+      <div class="text-fons">
+        <h1>Luis Alejandro Baca Palma</h1>
+        <h3>GSDAM & BCT</h3>
+        <button>CV</button>
+      </div>
+    </div>
+  </header>
 
-  <h1>Luis Alejandro</h1>
-  <a href="./exercicis/ex3.html">EXERCICI 3</a>
+  <section>
+    <div id="projectes">
+      <h1>Projects</h1>
+    </div>
+
+    <div id="treballs">
+      <h1>Works Html</h1>
+      <div class="imatges">
+        <div class="IMG-link">
+          <a href="https://lbaca.netlify.app/exercicis/ex1" target="_blank">
+            <img src="imatges/dtuning.PNG" alt="Web 1">
+          </a>
+        </div>
+        <div class="IMG-link">
+          <a href="https://lbaca.netlify.app/exercicis/ex2" target="_blank">
+            <img src="imatges/Aventura.jpg" alt="Web 2">
+          </a>
+        </div>
+        <div class="IMG-link">
+          <a href="https://lbaca.netlify.app/exercicis/ex3" target="_blank">
+            <img src="imatges/viladoms.PNG" alt="Web 3">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="yo">
+      <h1>About Me</h1>
+    </div>
+
+    <div id="Contacto">
+      <h1>Contact</h1>
+      <div id="gmail">
+        <h3>send me a message:</h3>
+        <a href="mailto:lbacapalma@gmail.com">
+          <img src="imatges/gmailicon.webp" alt="My Gmail">
+        </a>
+
+        <a href="whatsapp://send?phone=+34669071341">
+          <img src="imatges/WhatsAppicon.webp" alt="My WhatsApp">
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
 </body>
+
 </html>
