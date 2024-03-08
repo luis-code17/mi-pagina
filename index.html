@@ -8,24 +8,36 @@
   <link rel="icon" href="imatges/iconweb.png">
   <meta name="viewport" content="initial-scale=1, width=device-width">
   <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Luis</title>
 </head>
 
 <body>
   <header>
-    <nav class="menu">
-      <a href="">Home</a>
-      <a href="#projectes">Projects</a>
-      <a href="#treballs">Works Html</a>
-      <a href="#yo">About Me</a>
-      <a href="#contacto">Contact</a>
-    </nav>
+    <div class="mobile">
+
+      <div class="menu">
+        <a href="#mylinks">Home</a>
+        <div id="mylinks">
+          <a href="#projectes">Projects</a>
+          <a href="#treballs">Works Html</a>
+          <a href="#yo">About Me</a>
+          <a href="#contacto">Contact</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
 
     <div class="imatge-fons">
       <div class="text-fons">
         <h1>Luis Alejandro Baca Palma</h1>
         <h3>GSDAM & BCT</h3>
-        <button>CV</button>
+        <a href="CV.pdf" download="CV_LuisAlejandro.pdf">
+          <button type="button">CV</button>
+        </a>
       </div>
     </div>
   </header>
@@ -70,6 +82,17 @@
       </div>
 
     </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mylinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </section>
 
 </body>
