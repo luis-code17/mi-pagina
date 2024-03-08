@@ -163,6 +163,9 @@ footer {
 
 @media (max-width: 768px) {
   body{
+    #treballs h3{
+     font-size: 17px;
+    }
     .imatges{
       display: flex;
       flex-direction: column;
