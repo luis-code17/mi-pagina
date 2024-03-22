@@ -14,7 +14,7 @@
     device-orientation-permission-ui="enabled: false">
     <a-assets>
       <img id="card" src="ruso.jpg" />
-      <a-assets-item id="avatarMode1" src="stars_dance_in_galaxy/scene.gltf"> </a-assets-item>
+      <a-assets-item id="avatarModel" src="stars_dance_in_galaxy/scene.gltf"> </a-assets-item>
     </a-assets>
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -23,6 +23,7 @@
       <a-gltf-model src="#avatarModel" scale="0.9 0.9 0.9" position="0 0 0" rotation="90 0 0"
         animation-mixer="clip: mixamo.com">
     </a-entity>
+
     <a-entity mindar-image-target="targetIndex: 0">
       <a-plane src="#card" position="0 0 0" height="1.4" width="1" rotation="0 0 0"></a-plane>
     </a-entity>
