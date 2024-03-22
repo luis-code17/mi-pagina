@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Luis & Yousri Mindar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.0/dist/mindar-image-aframe.prod.js"></script>
-  </head>
 
-  <body>
-    <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-        <a-assets>
-            <img id="card" src="ruso.jpg"/>
-        </a-assets>
+<head>
+  <title>Luis & Yousri Mindar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.0/dist/mindar-image-aframe.prod.js"></script>
+</head>
 
-        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+<body>
+  <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB"
+    renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false">
+    <a-assets>
+      <img id="card" src="ruso.jpg" />
+      <a-assets-item id="avatarMode1" src="stars_dance_in_galaxy/scene.gltf"> </a-assets-item>
+    </a-assets>
 
-        <a-entity mindar-image-target="targetIndex: 0">
-                <a-plane src="#card" position="0 0 0" height="1.4" width="1" rotation="0 0 0"></a-plane>              
-        </a-entity>
-        <a-gltf-model src="#avatarModel"
-        scale="0.3 0.3 0.3"
-        position="0 0 0"
-        rotation="90 0 0"
-        animation-mixer ="clip: Armature|miaximo.com|Layer0.001" >
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+    <a-entity mindar-image-target="targetIndex: 1">
+      <a-gltf-model src="#avatarModel" scale="0.9 0.9 0.9" position="0 0 0" rotation="90 0 0"
+        animation-mixer="clip: mixamo.com">
+    </a-entity>
+    <a-entity mindar-image-target="targetIndex: 0">
+      <a-plane src="#card" position="0 0 0" height="1.4" width="1" rotation="0 0 0"></a-plane>
+    </a-entity>
+    <a-gltf-model src="#avatarModel" scale="0.3 0.3 0.3" position="0 0 0" rotation="90 0 0"
+      animation-mixer="clip: Armature|miaximo.com|Layer0.001">
       </a-entity>
-    </a-scene>
-  </body>
+  </a-scene>
+</body>
+
 </html>
