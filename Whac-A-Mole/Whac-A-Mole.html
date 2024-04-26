@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="author" content="Luis Alejandro">
+  <meta name="keywords" content="HTML">
+  <meta name="description" content="mini game">
+  <link rel="icon" href="imatges/iconweb.png">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+  <h1>Topo Game</h1>
+  <h3>Score: <div id="score">0</div>
+  </h3>
+
+  <div id="forats">
+
+    <div>
+      <img id="forat1" src="topoNo.jpg" alt="Foto sense topo" onclick="pam(this)">
+    </div>
+    <div>
+      <img id="forat2" src="topoNo.jpg" alt="Foto sense topo" onclick="pam(this)">
+    </div>
+    <div>
+      <img id="forat3" src="topoNo.jpg" alt="Foto sense topo" onclick="pam(this)">
+    </div>
+    <div>
+      <img id="forat4" src="topoNo.jpg" alt="Foto sense topo" onclick="pam(this)">
+    </div>
+    <div>
+      <img id="forat5" src="topoNo.jpg" alt="Foto sense topo" onclick="pam(this)">
+    </div>
+    <div>
+      <img id="forat6" src="topoNo.jpg" alt="Foto sense topo" onclick="pam(this)">
+    </div>
+    <div>
+      <img id="forat7" src="topoNo.jpg" alt="Foto sense topo" onclick="pam(this)">
+    </div>
+    <div>
+      <img id="forat8" src="topoNo.jpg" alt="Foto sense topo" onclick="pam(this)">
+    </div>
+    <div>
+      <img id="forat9" src="topoNo.jpg" alt="Foto sense topo" onclick="pam(this)">
+    </div>
+
+  </div>
+
+  <script>
+    let puntuacio = 0;
+    let topoActual;
+    setInterval(randomForat, 1000);
+
+    function amagarTots() {
+      document.getElementById("forat1").src = "topoNo.jpg";
+      document.getElementById("forat2").src = "topoNo.jpg";
+      document.getElementById("forat3").src = "topoNo.jpg";
+      document.getElementById("forat4").src = "topoNo.jpg";
+      document.getElementById("forat5").src = "topoNo.jpg";
+      document.getElementById("forat6").src = "topoNo.jpg";
+      document.getElementById("forat7").src = "topoNo.jpg";
+      document.getElementById("forat8").src = "topoNo.jpg";
+      document.getElementById("forat9").src = "topoNo.jpg";
+    }
+
+    function randomForat() {
+      topoActual = Math.floor(Math.random() * 9) + 1;
+      amagarTots();
+
+
+      if (topoActual == 1) {
+        document.getElementById("forat1").src = "topoSi.jpg";
+      } else if (topoActual == 2) {
+        document.getElementById("forat2").src = "topoSi.jpg";
+      } else if (topoActual == 3) {
+        document.getElementById("forat3").src = "topoSi.jpg";
+      } else if (topoActual == 4) {
+        document.getElementById("forat4").src = "topoSi.jpg";
+      } else if (topoActual == 5) {
+        document.getElementById("forat5").src = "topoSi.jpg";
+      } else if (topoActual == 6) {
+        document.getElementById("forat6").src = "topoSi.jpg";
+      } else if (topoActual == 7) {
+        document.getElementById("forat7").src = "topoSi.jpg";
+      } else if (topoActual == 8) {
+        document.getElementById("forat8").src = "topoSi.jpg";
+      } else if (topoActual == 9) {
+        document.getElementById("forat9").src = "topoSi.jpg";
+      }
+
+    }
+    function pam(img) {
+      if (img.src.includes("topoSi.jpg")) {
+        puntuacio++;
+        img.src = "topoPam.jpg";
+        var audio = new Audio('boing.mp3');
+        audio.play();
+        document.getElementById("score").innerText = puntuacio;
+      } else {
+        img.src = "topoPam.jpg";
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>
