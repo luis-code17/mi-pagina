@@ -1,6 +1,6 @@
 body {
   background-image: url("fondo.avif");
-  background-color: brown;
+  background-color: rgba(91, 54, 54, 0.923);
   background-size: cover;
   background-repeat: no-repeat;
   color: #333;
@@ -38,7 +38,8 @@ body {
 } 
 @media (max-width: 768px) {
   body {
-    background-size: cover;
+    background-size: 100%;
+    background-position: center
     text-align: center;
 }
 
