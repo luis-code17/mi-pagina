@@ -38,6 +38,7 @@ body {
 } 
 @media (max-width: 768px) {
   body {
+    background-image: url("fondo2.webp");
     background-size: 100%;
     background-position: center
     text-align: center;
