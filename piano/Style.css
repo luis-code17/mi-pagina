@@ -44,7 +44,7 @@ button:hover {
 
 @media (max-width: 768px) {
   body {
-    background-image: url("Fondo3.png");
+    background-image: url("Fondo3.webp");
     background-size: 100%;
     background-position: center;
     text-align: center;
