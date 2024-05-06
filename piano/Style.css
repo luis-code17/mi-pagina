@@ -41,3 +41,12 @@ h1{
 button:hover {
   background-color: azure;
 }
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("Fondo3.png");
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+  }
+}
