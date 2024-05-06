@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>piano</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <h1>Piano</h1>
+
+  <div id="notes">
+    <button type="button" id="c" onclick="playSound(c)">DO</button>
+    <button type="button" id="d" onclick="playSound(d)">RE</button>
+    <button type="button" id="e" onclick="playSound(e)">MI</button>
+    <button type="button" id="f" onclick="playSound(f)">FA</button>
+    <button type="button" id="g" onclick="playSound(g)">SOL</button>
+    <button type="button" id="a" onclick="playSound(a)">LA</button>
+    <button type="button" id="b" onclick="playSound(b)">SI</button>
+  </div>
+
+  <p></p>
+  <div id="funciones">
+    <button type="button" onclick="deleteMemory()">Esborra Memòria</button>
+    <button type="button" onclick="playMemory()">Play Memoria</button>
+  </div>
+
+  <script>
+    let notePlays = [];
+    function playSound(note) {
+      if (note == c) {
+        var audio = new Audio('do.mp3');
+        audio.play();
+        notePlays.push(c);
+
+      } else if (note == d) {
+        var audio = new Audio('re.mp3');
+        audio.play();
+        notePlays.push(d);
+      } else if (note == e) {
+        var audio = new Audio('mi.mp3');
+        audio.play();
+        notePlays.push(e);
+      } else if (note == f) {
+        var audio = new Audio('fa.mp3');
+        audio.play();
+        notePlays.push(f);
+      } else if (note == g) {
+        var audio = new Audio('sol.mp3');
+        audio.play();
+        notePlays.push(g);
+      } else if (note == a) {
+        var audio = new Audio('la.mp3');
+        audio.play();
+        notePlays.push(a);
+      } else if (note == b) {
+        var audio = new Audio('si.mp3');
+        audio.play();
+        notePlays.push(b);
+      }
+    }
+
+    function deleteMemory() {
+      notePlays = [];
+      alert("Memoria borrada");
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function playMemory() {
+      for (i in notePlays) {
+        playSound(notePlays[i]);
+        await sleep(500);
+      }
+    }
+
+  </script>
+</body>
+
+</html>
