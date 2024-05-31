@@ -1,0 +1,11 @@
+Model Information:
+* title:	Guildhall Great Hall
+* source:	https://sketchfab.com/3d-models/guildhall-great-hall-44c51d658d4f44c191568d56fc769d99
+* author:	artfletch (https://sketchfab.com/artfletch)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Guildhall Great Hall" (https://sketchfab.com/3d-models/guildhall-great-hall-44c51d658d4f44c191568d56fc769d99) by artfletch (https://sketchfab.com/artfletch) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
